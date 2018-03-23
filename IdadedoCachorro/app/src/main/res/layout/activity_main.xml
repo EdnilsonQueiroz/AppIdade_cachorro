@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.ednilson.idadedocachorro.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="383dp"
+        android:layout_height="544dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/idBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descobrir Idade"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="278dp"
+            android:layout_above="@+id/idresultado"
+            android:layout_alignLeft="@+id/idText"
+            android:layout_alignStart="@+id/idText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="367dp"
+            android:layout_height="88dp"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="20dp "
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingVertical="10dp"
+            android:text="Digite a idade do seu cachorro, para descobrir a idade dele em anos humanos "
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/Textoprincipal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="121dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="31dp" />
+
+        <EditText
+            android:id="@+id/idText"
+            android:layout_width="155dp"
+            android:layout_height="34dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="225dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/cachorro"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:id="@+id/idresultado"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="120dp"
+            android:text=" "
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="66dp"
+            tools:layout_editor_absoluteY="376dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
